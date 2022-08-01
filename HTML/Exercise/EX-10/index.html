@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media in HTML5</title>
+</head>
+<body>
+    <h1>Dynamic Image</h1>
+    <p>Try opening this site on several different devices or simply increase and decrease the size of your browser.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="media/images/s-photo.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="media/images/m-photo.png" type="image/png">
+        <img src="media/images/l-photo.png" alt="Large Photo">
+    </picture>
+
+    <h1>Audio in HTML5</h1>
+    <p>Let's learn to play audios in HTML5.</p>
+    <audio preload="metadata" controls loop>
+        <source src="media/audio/pray-anno-domini-beats.mp3" type="audio/mpeg">
+        <source src="media/audio/pray-anno-domini-beats.ogg" type="audio/ogg">
+        <source src="media/audio/pray-anno-domini-beats.wav" type="audio/wav">
+        <p>Unfortunately your browser cannot play audio. <a href="media/audio/pray-anno-domini-beats.mp3">Click here</a> to download the file.</p>
+    </audio>
+
+    <h1>Video in HTML5</h1>
+    <h2>Inserting locally hosted videos!</h2>
+    <h3>This video is hosted on my server</h3>
+    <p>Internal</p>
+    <video preload="metadata" width="560" height="315" poster="media/images/thumb-cup-of-couple.png" controls loop>
+        <source src="media/video/cup-of-couple.webm" type="video/webm">
+        <source src="media/video/cup-of-couple.m4v" type="video/m4v">
+        <source src="media/video/cup-of-couple.mp4" type="video/mp4">
+        <source src="media/video/cup-of-couple.ogv" type="video/ogg">
+        <p>Your browser does not support video playback. <a href="media/video/cup-of-couple.mp4">Click here</a> to download the file.</p>
+    </video>
+    <h3>This video is hosted off my server</h3>
+    <p>YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bdf9S_4v4Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></body>
+    <p>Vimeo</p>
+    <iframe src="https://player.vimeo.com/video/37094092?h=dc90b7ff85&loop=1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</html>
